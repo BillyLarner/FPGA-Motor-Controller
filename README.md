@@ -32,7 +32,7 @@ The project focuses on developing sound synchronous design practices, systematic
 ## Repository Structure
 
 ```text
-fpga-motor-controller/
+FPGA-Motor-Controller/
 ├── rtl/          # RTL source files
 ├── sim/          # Testbench and simulation files
 ├── constraints/  # FPGA pin and timing constraints
@@ -52,3 +52,9 @@ Planned verification includes:
 - Enable and zero speed conditions.
 - Direction switching.
 - Boundary conditions and invalid command sequences.
+
+
+## Learning Outcomes
+
+This project aims to deepen my practical experience in FPGA development, focusing on Verilog RTL design, synchronous digital logic, simulation and hardware implementation.
+The skills and techniques developed will be applied to my final year autonomous underwater vehicle project, where reliable digital control and hardware/software integration will be important components of the overall system.
