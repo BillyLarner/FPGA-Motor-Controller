@@ -52,9 +52,3 @@ Planned verification includes:
 - Enable and zero speed conditions.
 - Direction switching.
 - Boundary conditions and invalid command sequences.
-
-
-
-## Engineering Approach
-
-This project emphasises incremental development, reproducible testing and evidence-based debugging. Design decisions and limitations will be documented alongside implementation progress.
