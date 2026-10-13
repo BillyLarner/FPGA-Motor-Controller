@@ -53,8 +53,32 @@ Planned verification includes:
 - Direction switching.
 - Boundary conditions and invalid command sequences.
 
-
 ## Learning Outcomes
 
 This project aims to deepen my practical experience in FPGA development, focusing on Verilog RTL design, synchronous digital logic, simulation and hardware implementation.
 The skills and techniques developed will be applied to my final year autonomous underwater vehicle project, where reliable digital control and hardware/software integration will be important components of the overall system.
+
+## Current Status
+
+Latest: RTL simulation and verification complete.
+
+Completed tasks:
+- Implemented a parameter-free Verilog PWM motor controller.
+- Added speed command, enable and direction inputs.
+- Created a self-checking ModelSim testbench.
+- Verified PWM duty-cycle behaviour at 0%, 25%, 50%, 75% and 100%.
+- Tested enable and direction behaviour. 
+- Completed a Quartus compilation successfully.
+
+## Current Task
+
+Reviewing verification coverage and preparing the design for hardware testing.
+
+## Future Development
+
+- Expand test coverage, including reset behaviour and additional speed commands.
+- Review timing constraints and resolve unconstrained timing paths.
+- Confirm the target FPGA board and assign physical pin locations.
+- Validate the design on the FPGA board.
+- Document test results and any hardware observations.
+
