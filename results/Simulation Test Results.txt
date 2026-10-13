@@ -1,0 +1,63 @@
+restart
+run 1200 us
+
+# ================================================
+# FPGA MOTOR CONTROLLER - SELF CHECKING TESTBENCH
+# Clock: 50 MHz | PWM target: 20 kHz
+# Expected PWM period: 2500 clock cycles (50 us)
+# ================================================
+# 
+# ------------------------------------------------
+# TEST: speed_cmd=0, expected duty=0%
+# PASS: Direction initialised while disabled.
+# PASS: Direction changes at zero speed.
+# PWM measurement: 0 HIGH cycles out of 2500
+# PASS: PWM duty cycle matches expectation.
+# PASS: PWM is LOW while disabled.
+# PASS: Direction follows request while disabled.
+# 
+# ------------------------------------------------
+# TEST: speed_cmd=625, expected duty=25%
+# PASS: Direction initialised while disabled.
+# PASS: Direction held while enabled and running.
+# PWM measurement: 625 HIGH cycles out of 2500
+# PASS: PWM duty cycle matches expectation.
+# PASS: PWM is LOW while disabled.
+# PASS: Direction follows request while disabled.
+# 
+# ------------------------------------------------
+# TEST: speed_cmd=1250, expected duty=50%
+# PASS: Direction initialised while disabled.
+# PASS: Direction held while enabled and running.
+# PWM measurement: 1250 HIGH cycles out of 2500
+# PASS: PWM duty cycle matches expectation.
+# PASS: PWM is LOW while disabled.
+# PASS: Direction follows request while disabled.
+# 
+# ------------------------------------------------
+# TEST: speed_cmd=1875, expected duty=75%
+# PASS: Direction initialised while disabled.
+# PASS: Direction held while enabled and running.
+# PWM measurement: 1875 HIGH cycles out of 2500
+# PASS: PWM duty cycle matches expectation.
+# PASS: PWM is LOW while disabled.
+# PASS: Direction follows request while disabled.
+# 
+# ------------------------------------------------
+# TEST: speed_cmd=2500, expected duty=100%
+# PASS: Direction initialised while disabled.
+# PASS: Direction held while enabled and running.
+# PWM measurement: 2500 HIGH cycles out of 2500
+# PASS: PWM duty cycle matches expectation.
+# PASS: PWM is LOW while disabled.
+# PASS: Direction follows request while disabled.
+# 
+# ================================================
+# VERIFICATION SUMMARY
+# Passed checks: 25
+# Failed checks: 0
+# OVERALL RESULT: PASS
+# ================================================
+#    Time: 250940 ns  Iteration: 1  Instance: /motor_controller_tb
+# 1
+# Break in Module motor_controller_tb at C:/Users/Bmlar/Documents/FPGA Projects/Digital Motor Controller/motor_controller_tb.v line 191
